@@ -1,18 +1,35 @@
 <meta charset="UTF-8">
 <script>
     /*
-    PROBLEMA: REPRESENTANTE DE SALA
-    Peça para o programa perguntar ao professor regente o nome dos três candidatos a representante da sala.
-    Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
-    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
+    PROBLEMA: LETRAS REPETIDAS
+    Considere a lista de letras abaixo:
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    Faça um programa que identifique as letras repetidas que estão contidas na lista e apresente cada letra apenas uma única vez, e em ordem alfabética.
+    *Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
+    **Apresente apenas letras minúsculas!
     */
 
+
+    
     //ENTRADA
-
-
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    
     //PROCESSAMENTO
-
-
+    let letrasUnicas = [];
+    let letrasRepetidas = [];
+    for (let i = 0; i < listaDeLetras.length; i = i + 1) {
+        let letra = listaDeLetras[i].toLowerCase();
+        if (letrasUnicas.includes(letra) == false) {
+            letrasUnicas.push(letra);
+        }
+        else {
+            letrasRepetidas.push(letra);
+        }
+    }
+    
     //SAÍDA
-
+    document.write(`As letras que se repetem são ${letrasRepetidas.sort().join(", ")}`);
 </script>
+
+01_letrasRepetidas.html
+Exibindo 01_letrasRepetidas.html…
