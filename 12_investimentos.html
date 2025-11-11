@@ -5,11 +5,14 @@
     */
 
     //ENTRADA
-
+    let dias = 0;
 
     //PROCESSAMENTO
-
-
+    for (let i = 1000; i <= 2000; i = i * 1.02){
+        dias++
+    }
+    const diasCompletos = (dias / 5) * 7
     //SAÍDA
+    alert(`A quantidade de dias necessários para conseguir R$2000,00 será de ${Math.ceil(diasCompletos)}.`)
 
 </script>

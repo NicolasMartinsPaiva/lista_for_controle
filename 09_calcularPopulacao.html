@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
-
+    let anos = 50000;
+    let anos10 = 50000;
     
     //PROCESSAMENTO
-    
-
+    for(let i = 1; i <= 10; i++) {
+        if (i <= 5) {
+            anos = anos * 1.015;
+        }
+        anos10 = anos10 * 1.015;
+    }
     //SAÍDA
+        alert(`A população prevista em 10 anos é de: ${Math.ceil(anos10)}.`);
+        alert(`A população prevista em 5 anos é de: ${Math.ceil(anos)}.`);
 
 </script>
